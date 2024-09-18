@@ -1,10 +1,10 @@
 
-import UserList from './components/UserList/UserList.jsx';
+import Timer from './components/Timer/Timer.jsx';
 
 const App = () => {
   return (
     <div>
-      <UserList />
+      <Timer />
     </div>
   );
 };
