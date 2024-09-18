@@ -1,11 +1,12 @@
-
-import Timer from './components/Timer/Timer.jsx';
-
+import { UserProvider } from './components/UserContext/UserContext.jsx'; 
+import ShowUser from './components/ShowUser/ShowUser.jsx'; 
 const App = () => {
   return (
-    <div>
-      <Timer />
-    </div>
+    <UserProvider>
+      <div>
+        <ShowUser /> 
+      </div>
+    </UserProvider>
   );
 };
 
