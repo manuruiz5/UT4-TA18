@@ -1,10 +1,10 @@
 
-import Counter from './components/Counter/Counter.jsx';
+import UserList from './components/UserList/UserList.jsx';
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      <UserList />
     </div>
   );
 };
