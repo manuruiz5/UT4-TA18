@@ -5,10 +5,10 @@ export const UserContext = createContext();
 
 // Proveedor del contexto
 export const UserProvider = ({ children }) => {
-  const [userName] = useState('Manuela Ruiz'); // Estado del nombre del usuario
+  const [userName, setUserName] = useState('Manuela Ruiz'); // Estado del nombre del usuario
 
   return (
-    <UserContext.Provider value={userName}>
+    <UserContext.Provider value={{userName, setUserName}}>
       {children} 
     </UserContext.Provider>
   );
