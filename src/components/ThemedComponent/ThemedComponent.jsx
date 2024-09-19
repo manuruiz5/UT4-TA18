@@ -7,8 +7,8 @@ const ThemedComponent = () => {
 
   return (
     <div className={theme === 'light' ? styles.light : styles.dark}>
-    <h1>Esto es con tema {theme}</h1>
-  </div>
+      <h1>Esto es con tema {theme === 'light' ? 'light' : 'dark'}</h1>
+    </div>
   );
 };
 
